@@ -1,0 +1,830 @@
+h1
+{
+    text-align: center;
+}
+.logo
+{
+    height: 30px;
+}
+
+
+.title img
+{
+    object-fit: cover;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.carousel-item {
+    height: 700px; 
+    width: 100%;
+
+
+}
+
+h1{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.col h3
+{
+    font-weight: lighter;
+    font-family: cursive;
+    color: black;
+    text-align:center;
+
+}
+
+.card:hover,.trans:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+h1,h2{
+    font-family: serif;
+}
+
+.img-container {
+    position: relative;
+  }
+.img1-container {
+    position: relative;
+  }
+  
+  .circle-overlay {
+    position: absolute;
+    top: 390px;
+    left: 890px;
+    height: 600px;
+    width: 600px;
+    background-color: white ; 
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 2;
+  }
+  
+  .circle-overlay p
+  {
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    font-family: fantasy;
+}
+.int-title img
+{
+  object-fit: cover;
+  
+}
+.isl-title img
+{
+    object-fit: cover;
+}
+.isl-title
+{
+    position: relative;
+}
+.isl-title h1{
+    position: absolute;
+    font-family: serif;
+    font-size: small;
+    top: 700px; 
+    left: 250px; 
+    color: white; 
+    text-align:start; 
+    font-size: 90px; 
+}
+.int-title
+{
+  position: relative;
+}
+.int-title h1 {
+    position: absolute;
+    font-family: serif;
+    font-size: small;
+    top: 650px; 
+    left: 250px; 
+    color: white; 
+    text-align:start; 
+    font-size: 90px; 
+}
+
+
+
+.padd
+{
+    padding-top: 150px;
+
+}
+.overlap
+{
+    position: absolute;
+    top:190px;
+    left:10px;
+    text-align: center;
+}
+.overlap p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 20px;
+    font-family: serif;
+}
+
+
+.int-container
+{
+    padding-top: 20px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+}
+.int-img
+{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.int-img img
+{
+    width: 100%;
+    height: 100%; 
+    object-fit:cover; 
+    border-radius: 40px;
+}
+
+
+.carousel-control-prev {
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  .carousel-control-next {
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.1);
+
+  }
+  .strong
+  {
+    font-style: italic;
+    font-family: serif  ;
+  }
+
+.zoom-effect {
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+@media (max-width:320px)
+{
+    .title img
+    {
+        object-fit: fill;
+        height: 300px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    
+    .carousel-item {
+        height: 180px; 
+        width: 100%; 
+    }
+
+
+    .img-container {
+        position: relative;
+    }
+    .img1-container {
+        position: relative;
+    }
+    
+    .circle-overlay {
+        position: absolute;
+        top: 80px;
+        left: 190px;
+        height: 200px;
+        width: 200px;
+        background-color: white ; 
+        border-radius: 50%;
+        opacity: 0.7;
+        z-index: 2;
+    }
+    
+    .circle-overlay p
+    {
+        text-align: center;
+        font-size: 0.57rem;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        font-family: fantasy;
+    }
+
+    .int-img img
+    {
+        width: 300px;
+        height: 100%; 
+        object-fit:cover; 
+        border-radius: 40px;
+    }
+
+    .int-title img
+    {
+        object-fit: fill;
+        height: 450px;
+
+    }
+
+    .overlap
+    {
+        position: absolute;
+        top:30px;
+        left:10px;
+        text-align: center;
+    }
+    .overlap p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: black;
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 20px;
+        font-family: serif;
+    }
+    .isl-title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+    .isl-title h1
+    {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 300px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 40px;
+    }
+    .int-title
+    {
+    position: relative;
+    }
+    .int-title h1 {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 370px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 30px; 
+    }
+
+    .int-container
+    {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+
+}
+@media (min-width:321px) and (max-width:375px)
+{
+    .title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 500;
+        object-fit: fill;
+    }
+    
+    
+    .carousel-item {
+        height: 200px; 
+        width: 100%; 
+    }
+
+
+    .img-container {
+        position: relative;
+    }
+    .img1-container {
+        position: relative;
+    }
+    
+    .circle-overlay {
+        position: absolute;
+        top: 100px;
+        left: 210px;
+        height: 200px;
+        width: 200px;
+        background-color: white ; 
+        border-radius: 50%;
+        opacity: 0.7;
+        z-index: 2;
+    }
+    
+    .circle-overlay p
+    {
+        text-align: center;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        font-family: fantasy;
+    }
+
+    .int-img img
+    {
+        width: 350px;
+        height: 100%; 
+        object-fit:cover; 
+        border-radius: 40px;
+    }
+
+    .int-title img
+    {
+        object-fit: fill;
+        height: 450px;
+
+    }
+
+    .overlap
+    {
+        position: absolute;
+        top:30px;
+        left:10px;
+        text-align: center;
+    }
+    .overlap p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: black;
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 20px;
+        font-family: serif;
+    }
+    .isl-title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+    .isl-title h1
+    {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 300px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 40px;
+    }
+    .int-title
+    {
+    position: relative;
+    }
+    .int-title h1 {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 370px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 30px; 
+    }
+
+    .int-container
+    {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+
+}
+@media (min-width:376px) and (max-width:425px) 
+{
+    .title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 500;
+        object-fit: fill;
+    }
+    
+    
+    .carousel-item {
+        height: 200px; 
+        width: 100%; 
+    }
+
+
+    .img-container {
+        position: relative;
+    }
+    .img1-container {
+        position: relative;
+    }
+    
+    .circle-overlay {
+        position: absolute;
+        top: 100px;
+        left: 250px;
+        height: 200px;
+        width: 200px;
+        background-color: white ; 
+        border-radius: 50%;
+        opacity: 0.7;
+        z-index: 2;
+    }
+    
+    .circle-overlay p
+    {
+        text-align: center;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        font-family: fantasy;
+    }
+
+    .int-img img
+    {
+        width: 400px;
+        height: 100%; 
+        object-fit:cover; 
+        border-radius: 40px;
+    }
+
+    .int-title img
+    {
+        object-fit: fill;
+        height: 450px;
+
+    }
+
+    .overlap
+    {
+        position: absolute;
+        top:30px;
+        left:10px;
+        text-align: center;
+    }
+    .overlap p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: black;
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 20px;
+        font-family: serif;
+    }
+    .isl-title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+    .isl-title h1
+    {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 300px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 40px;
+    }
+    .int-title
+    {
+    position: relative;
+    }
+    .int-title h1 {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 370px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 30px; 
+    }
+
+    .int-container
+    {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px)
+{
+    .title img
+    {
+        object-fit: fill;
+        height: 600px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    
+    .carousel-item {
+        height: 435px; 
+        width: 100%; 
+    }
+
+
+    .img-container {
+        position: relative;
+    }
+    .img1-container {
+        position: relative;
+    }
+    
+    .circle-overlay {
+        position: absolute;
+        top: 300px;
+        left: 500px;
+        height: 250px;
+        width: 250px;
+        background-color: white ; 
+        border-radius: 50%;
+        opacity: 0.7;
+        z-index: 2;
+    }
+    
+    .circle-overlay p
+    {
+        text-align: center;
+        font-size: 1rem;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        font-family: fantasy;
+    }
+
+    .int-img img
+    {
+        width: 700px;
+        height: 100%; 
+        object-fit:cover; 
+        border-radius: 40px;
+    }
+
+    .int-title img
+    {
+        object-fit: fill;
+        height: 550px;
+
+    }
+
+    .overlap
+    {
+        position: absolute;
+        top:200px;
+        left:10px;
+        text-align: center;
+    }
+    .overlap p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 20px;
+        font-family: serif;
+    }
+    .isl-title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+    .isl-title h1
+    {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 300px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 40px;
+    }
+    .int-title
+    {
+    position: relative;
+    }
+    .int-title h1 {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 450px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 50px; 
+    }
+
+    .int-container
+    {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+    .col
+    {
+        height: 400px;
+        
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px)
+{
+    .title img
+    {
+        object-fit: fill;
+        height: 600px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    
+    .carousel-item {
+        height: 435px; 
+        width: 100%; 
+    }
+
+
+    .img-container {
+        position: relative;
+    }
+    .img1-container {
+        position: relative;
+    }
+    
+    .circle-overlay {
+        position: absolute;
+        top: 300px;
+        left: 750px;
+        height: 250px;
+        width: 250px;
+        background-color: white ; 
+        border-radius: 50%;
+        opacity: 0.7;
+        z-index: 2;
+    }
+    
+    .circle-overlay p
+    {
+        text-align: center;
+        font-size: 1rem;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        font-family: fantasy;
+    }
+
+    .int-img img
+    {
+        width: 300px;
+        height: 200px; 
+        object-fit:cover; 
+        border-radius: 40px;
+    }
+
+    .int-title img
+    {
+        object-fit: fill;
+        height: 550px;
+
+    }
+
+    .overlap
+    {
+        position: absolute;
+        top:100px;
+        left:10px;
+        text-align: center;
+    }
+    .overlap p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: black;
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 20px;
+        font-family: serif;
+    }
+    .isl-title img
+    {
+        object-fit: fill;
+        height: 400px;
+    }
+    .isl-title h1
+    {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 300px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 40px;
+    }
+    .int-title
+    {
+    position: relative;
+    }
+    .int-title h1 {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 450px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 50px; 
+    }
+
+    .int-container
+    {
+        padding-top: 20px;
+        display: grid;
+        gap:10px;
+    }
+    .col
+    {
+        height: 300px;
+        width:300px;
+    }
+    .col h3
+    {
+        font-weight:bold;
+        font-family: cursive;
+        color: black;
+        text-align:end;
+        font-size: 30px;
+    }
+}
