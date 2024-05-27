@@ -1,0 +1,152 @@
+.custom-height
+{
+    height: 800px;
+    object-fit: cover;
+}
+a,a:hover
+{
+    text-decoration: none;
+}
+
+.card:hover,.trans:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+.main
+{
+    padding: 100px;
+}
+.main>h1 
+{
+    font-size: 4em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.int-container
+{
+    padding-top: 20px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.int-img
+{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.int-img img
+{
+    width: 100%;
+    height: 100%; 
+    object-fit:cover; 
+    border-radius: 40px;
+}
+
+.overlap
+{
+    position: absolute;
+    top:190px;
+    left:10px;
+    text-align: center;
+}
+.overlap p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 20px;
+    font-family: serif;
+}
+
+.padd 
+{
+    padding-top: 100px;
+}
+.int-title 
+{
+    position: relative;
+}
+
+.int-title h1 {
+    position: absolute;
+    font-family: serif;
+    font-size: small;
+    top: 650px; 
+    left: 250px; 
+    color: white; 
+    text-align:start; 
+    font-size: 90px; 
+}
+
+.isl-title img
+{
+    object-fit: fill;
+    height: 800px;
+}
+
+.isl-title h1
+{
+    position: absolute;
+    font-family: serif;
+    font-size:larger;
+    top: 650px; 
+    left: 100px; 
+    color: white; 
+    text-align:start; 
+    font-size: 40px;
+}
+
+.about-header
+{
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.about-main 
+{
+    padding: 20px;
+}
+
+.about-main section 
+{
+    margin-bottom: 40px;
+}
+.about-main h2 
+{
+    color:#333;
+}
+
+.about-main p 
+{
+    color: #666;
+}
+.about-main ul 
+{
+    list-style-type: none;
+    padding: 0;
+}
+.about-main ul li
+{
+    margin-bottom: 10px;
+}
+
+#packing-checklist {
+    margin-top: 10px;
+}
+
+#packing-checklist input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+footer {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

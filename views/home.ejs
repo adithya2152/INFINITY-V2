@@ -1,0 +1,93 @@
+<%- include("partials/header.ejs") %>
+
+
+<section >
+    <div class="title">
+      <img src="infinity.png" alt="" width="100%" height="900">
+    </div>
+  </section>
+
+  <section class="main">  
+    <h1 >WELCOME TO ABC TRAVELS </h1>
+      <div class="container">
+        <h2 class="pb-2 border-bottom mb-5 ">Featured Destinations</h2>
+       
+       
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="lakshadweep.jpg" class="d-block w-100 custom-height" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="singapore.jpg" class="d-block w-100 custom-height" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="taj.jpg" class="d-block w-100 custom-height" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="andaman.jpg" class="d-block w-100 custom-height" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  </section>
+  
+ 
+  <section>
+    <div>
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom ">Destinations </h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <a href="/int">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('international.jpg');background-size:cover ; background-repeat: no-repeat;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">International</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col">
+            <a href="/ind">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('indian.jpg');background-size:cover ; background-repeat: no-repeat;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">India</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col">
+            <a href="/isl">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('islands.jpg');background-size:cover ; background-repeat: no-repeat;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Islands </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<%- include("partials/footer.ejs") %>

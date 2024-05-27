@@ -1,293 +1,3 @@
-/* .container-header {
-    position: relative;
-    width: 1890px;
-    height: 500px;
-    padding-bottom: 40px;
-}
-
-.container-header img {
-    width: 1890px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-.title {
-    position: absolute;
-    top: 5px;
-    left: 950px;
-    transform: translateX(-50%);
-    word-spacing: 5px;
-    white-space: nowrap;
-    color: white !important;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.title > p {
-    margin: 0;
-    font-size: 4rem;
-    font-weight: bold;
-    border-bottom: 9px solid white;
-}
-
-
-.title div > p {
-    margin: 20px auto;
-    font-size: 4.8rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: fit-content;
-    color: #333;
-    padding: 10px;
-    border-radius: 100px;
-    backdrop-filter: blur(10px) brightness(150%);
-}
-
-strong
-{
-    font-size: 3rem;
-}
-
-.flex-container
-{
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
-
-}
-.flex-container div {
-   
-    border-radius: 30px;
-    height: 300px;
-    width: 600px;
-}
-
-.india
-{
-    background-image: url("./indian.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.international
-{
-    background-image: url("./international.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.islands
-{
-    background-image: url("./islands.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.flex-container div p
-{
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 300px;
-    font-size: 2rem;
-    border-radius: 20px;
-    text-align: center;
-    position: relative;
-    left:160px;
-    top:200px;
-}
-.cont 
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cont p
-{
-    font-size: 4rem;
-    border-bottom: 10px solid black;
-}
-
-
-.button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background: linear-gradient(135deg, #6D5BBA, #8D58BF);
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background: linear-gradient(135deg, #8D58BF, #6D5BBA);
-    transform: translateY(-3px);
-}
-
-.button:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-@media only screen and (max-width:320px)
-{
-    .container-header
-    {
-        height: 500px;
-    }
-    .container-header img 
-    {
-        height: 500px;
-        width: 280px;
-        object-fit:cover;
-    }
-    
-    .title
-    {
-        left:140px;
-    }
-    
-    .title>p
-    {
-        font-size:1rem ;
-        border-bottom: 2px solid white;
-    }
-    .title div>p 
-    {
-        font-size: 2rem;
-    }
-      
-    .flex-container
-    {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .flex-container div
-    {
-        height:350px;
-        width:280px;
-    }
-    .flex-container div p
-    {
-        width:200px;
-        font-size: 1.15rem;
-        font-weight: bolder;
-        top:250px;
-        left:50px;
-    }
-    .cont 
-    {
-        width:280px ;
-    }
-    .cont p
-    {
-        font-size: 2rem;
-        border-bottom: 3px solid black;
-    }
-    .button 
-    {
-        font-size: 1rem;
-    }
-
-}
-@media only screen and (min-width:321px) and (max-width:768px)
-{
-    .container-header
-    {
-        width:100%;
-        height:1000px;
-    }
-    .container-header  img
-    {
-        width:1060px;
-        height: 1000px;
-    }
-    .title
-    {
-        left:560px;
-    }
-      
-    .flex-container
-    {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .flex-container div
-    {
-        height:800px;
-        width:1000px;
-    }
-    .flex-container div p
-    {
-        width:800px;
-        font-size: 6rem;
-        font-weight: bolder;
-        top:420px;
-    }
-    .cont 
-    {
-        width:1060px ;
-    }
-    .cont p
-    {
-        font-size: 4.5rem;
-    }
-    .button 
-    {
-        font-size: 4rem;
-    }
-}
-@media only screen and (min-width:769px) and (max-width:1024px)
-{
-    .container-header
-    {
-        width:100%;
-        height:1000px;
-    }
-    .container-header  img
-    {
-        width:1090px;
-        height: 1000px;
-    }
-    .title
-    {
-        left:560px;
-    }
-      
-    .flex-container
-    {
-        width: 1000px;
-    }
-    .flex-container div
-    {
-        height:500px;
-        width: 1000px;
-    }
-
-    .cont 
-    {
-        width:1060px ;
-    }
-    .cont p
-    {
-        font-size: 4.5rem;
-    }
-    .button 
-    {
-        font-size: 4rem;
-    }
-}
-
- */
-
-
  /* General Styles */
 body {
     margin: 0;
@@ -430,6 +140,73 @@ strong {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+/* login */
+/* Container Styles */
+.l_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login Form Styles */
+.login,.register {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px) brightness(160%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form ,.register form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login label,.register label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login input , .register input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login button , .register button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #45a049;
+}
+
+.login a
+{
+    margin-left: 240px;
+}
+
+.register a
+{
+    margin-left: 210px;
+}  
 /* Media Queries */
 @media only screen and (max-width: 320px) {
     .container-header {
