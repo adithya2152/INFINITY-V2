@@ -1,7 +1,97 @@
-.custom-height
+.custom-height,.carousel-item img
 {
     height: 800px;
-    object-fit: cover;
+    object-fit: fill;
+}
+
+.title 
+{
+    position: relative;
+}
+.title img 
+{
+    width:100%;
+    height:900;
+}
+.heading 
+{
+    position: absolute;
+    top:30px;
+    left:50%;
+    transform: translateX(-50%);
+    word-spacing: 5px;
+    white-space: nowrap;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.tagline
+{
+    position: absolute;
+    top:750px;
+    left:700px;
+    word-spacing: 5px;
+    white-space: nowrap;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+}
+.heading>p 
+{
+    margin: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    border-bottom: 9px solid white;
+}
+.tagline>p 
+{
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.space 
+{
+    font-size: 2rem;
+    padding-left: 600px;
+}
+.overlay 
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 60%;
+    height: 80%;
+    width: 100%;
+    background-color: white ; 
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 2;
+    
+}
+
+.overlay>p
+{
+    position: absolute;
+    top:100px;
+    left:50%;
+    transform: translateX(-50%);
+
+
+    text-align: center;
+    font-size: 3rem;
+    font-family: fantasy;
+}
+.heading div>p 
+{
+    margin: 20px auto;
+    font-size: 4.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    color: #333;
+    padding: 10px;
+    border-radius: 100px;
+    backdrop-filter: blur(10px) brightness(150%);
 }
 a,a:hover
 {
@@ -83,6 +173,7 @@ a,a:hover
     font-size: 90px; 
 }
 
+
 .isl-title img
 {
     object-fit: fill;
@@ -149,4 +240,148 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+.navbar
+{
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+
+@media only screen and (max-width:320px)
+{
+    .title img 
+    {
+        height:300px;
+    }
+    .heading 
+    {
+        top:5px;
+        
+    }
+    .heading>p 
+    {
+        font-size: 1rem;
+        border-bottom: 3px solid white;
+    }
+    .heading div>p 
+    {
+        font-size: 1.5rem;
+    }
+    .main 
+    {
+        width:100%;
+        margin-top: 50px;
+        padding:0;
+    }
+
+
+    .main>h1 
+    {
+        font-size: 1.25rem;
+    }
+
+    .carousel-item img 
+    {
+        object-fit: fill;
+    }
+    .custom-height
+    {
+        height: 200px;
+    }
+    .overlay>p
+    {
+        top:10px; 
+        font-size: 1rem;       
+    }
+
+}
+@media only screen and (min-width:321px) and (max-width:768px)
+{
+    
+    .heading>p 
+    {
+        font-size: 1.25rem;
+        border-bottom: 3px solid white;
+    }
+    .heading div>p 
+    {
+        font-size: 1.5rem;
+    }
+    .main 
+    {
+        width:100%;
+        margin-top:50px;
+        padding: 0;
+
+    }
+
+    .main>h1 
+    {
+        font-size: 1.85rem;
+    }
+
+    .carousel-item
+    {
+        object-fit: fill;
+    }
+
+    .custom-height
+    {
+        height: 400px;
+    }
+
+    .overlay>p
+    {
+        top:20px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px)
+{
+    .title img 
+    {
+        height: 600px;
+    }
+    .heading>p 
+    {
+        font-size: 2.5rem;
+        border-bottom: 4px solid white;
+    }
+    .heading div>p 
+    {
+        font-size: 3rem;
+
+    }
+    .main 
+    {
+        width:100%;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .main>h1 
+    {
+        font-size: 3rem;
+    }
+    .carousel-item img 
+    {
+        object-fit: fill;
+    }
+    .custom-height
+    {
+        height:550px;
+    }
+    .col
+    {
+        height: 400px;
+    }
+    .overlay>p 
+    {
+        top:25px;
+        font-size: 2rem;
+    }
+
 }

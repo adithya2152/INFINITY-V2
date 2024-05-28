@@ -60,6 +60,62 @@ app.get("/isl",(req,res)=>
 {
     res.render("isl.ejs");
 });
+
+
+app.get("/italy",(req,res)=>
+{
+    res.render("italy.ejs");
+});
+app.get("/spain",(req,res)=>
+{
+    res.render("spain.ejs");
+});
+app.get("/singapore",(req,res)=>
+{
+    res.render("singapore.ejs");
+});
+app.get("/australia",(req,res)=>
+{
+    res.render("australia.ejs");
+});
+app.get("/thailand",(req,res)=>
+{
+    res.render("thailand.ejs");
+});
+app.get("/grece",(req,res)=>
+{
+    res.render("greece.ejs");
+});
+
+
+app.get("/agra",(req,res)=>
+{
+    res.render("agra.ejs");
+});
+app.get("/amritsar",(req,res)=>
+{
+    res.render("amritsar.ejs");
+});
+app.get("/delhi",(req,res)=>
+{
+    res.render("delhi.ejs");
+});
+app.get("/jaipur",(req,res)=>
+{
+    res.render("jaipur.ejs");
+});
+app.get("/jammu",(req,res)=>
+{
+    res.render("jammu.ejs");
+});
+app.get("/karnataka",(req,res)=>
+{
+    res.render("karnataka.ejs");
+});
+
+
+
+
 app.post("/login",async(req,res)=>
 {
     const l_user = req.body.username;
