@@ -114,6 +114,30 @@ app.get("/karnataka",(req,res)=>
 });
 
 
+app.get("/andaman",(req,res)=>
+{
+    res.render("andaman.ejs")
+});
+app.get("/bali",(req,res)=>
+{
+    res.render("bali.ejs")
+});
+app.get("/cyprus",(req,res)=>
+{
+    res.render("cyprus.ejs")
+});
+app.get("/lakshadweep",(req,res)=>
+{
+    res.render("lakshadweep.ejs")
+});
+app.get("/mauritius",(req,res)=>
+{
+    res.render("mauritius.ejs")
+});
+app.get("/whitsundays",(req,res)=>
+{
+    res.render("whitsundays.ejs")
+});
 
 
 app.post("/login",async(req,res)=>
