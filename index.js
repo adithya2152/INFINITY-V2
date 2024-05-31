@@ -60,6 +60,10 @@ app.get("/isl",(req,res)=>
 {
     res.render("isl.ejs");
 });
+app.get("/intpackage",(req,res)=>
+{
+    res.render("intpackage.ejs");
+});
 
 
 app.get("/italy",(req,res)=>
