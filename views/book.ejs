@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+<div class="book-main">
+    <div class="book-container">
+        <div class="book">
+            <% if(locals.total){ %>
+                <p>You have Successfully Booked your journey </p>
+                <p>Booking ID <span><%= bid %></span></p>
+                <p>You will have to pay <span>₹<%= total %> </span> </p>
+                <p>Happy journey</p>
+                <a href="/home" tyoe="button" class="submit" >HOME</a>
+            <% } else { %>
+
+            <form action="/booking" method="post">
+                <label for="userid">UserID</label>
+                <input type="number" name="userid" id="userid" value="<%= Uid %>" readonly  >
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" value="<%= user %>" readonly>
+
+                <label for="PackageID">PackageID</label>
+                <input type="text" name="PackageID" id="PackageID" value="<%= pid %>" readonly>
+
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price" value="<%= price %>" readonly>
+
+                <label for="startdate">StartDate</label>
+                <input type="date" name="startdate" >
+
+                <label for="quantity">No. of Bookings</label>
+                <input type="number" name="quantity" id="quantity">
+
+                <button type="submit">Submit</button>
+                <!-- <a href="/booking?"></a> -->
+            </form>
+            <% } %>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer.ejs") %>

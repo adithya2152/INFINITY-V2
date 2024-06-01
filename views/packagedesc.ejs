@@ -1,3 +1,30 @@
 <%- include("partials/header.ejs") %>
 
+<section>
+    <div class="int-title">
+        <img src="<%=img%>" alt="">
+        <div class="packsub">
+            <h1><%= name %></h1>
+        </div>
+    </div>
+</section>
+<div class="final_container">
+    <% if (package && package.length > 0) { %>
+        <% package.forEach(pack => { %>
+            <div class="box">
+                <p><strong> Package Id :</strong> <%= pack.pid %></p>
+                <p><strong> Name :</strong> <%= pack.package_name %></p>
+                <p><strong>Destination :</strong> <%= pack.destination_type %></p>
+                <p><strong>Price:</strong> <%= pack.price %></p>
+                <p><strong>Duration:</strong><%= pack.duration %></p>
+                <p><strong>Description: </strong><br><%= pack.package_desc %></p>
+                <a href="/book?pid=<%= pack.pid %>" type="button" class="button">BOOK</a>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <p>No package found</p>
+    <% } %>
+    
+</div>
+
 <%- include("partials/footer.ejs") %>
