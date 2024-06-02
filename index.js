@@ -36,6 +36,13 @@ const packageImages = {
     "BEST OF MAURITIUS":"mauritius.jpeg",
     "BEST OF WHITSUNDAYS":"whitsundays2.jpeg",
     "BEST OF BALI":"balipackage.jpg",
+    "BEST OF SOUTH-INDIA":"southindia.jpg",
+    "BEST OF NORTH-INDIA":"northindia.webp",
+    "EXCLUSIVE ARCHITECTURE":"architecture.jpg",
+    "TOURIST HOTSPOTS":"hotspot.jpg",
+    "INDIAN TEMPLES":"temple.jpg",
+    "INDIAN HERITAGE":"heritage.jpg",
+
     
     // Add other package names and image paths here
 };
@@ -79,10 +86,7 @@ app.get("/isl",(req,res)=>
 {
     res.render("isl.ejs");
 });
-app.get("/profile",(req,res)=>
-{
-    res.render("profile.ejs");
-});
+
 app.get("/intpackage",(req,res)=>
 {
     res.render("intpackage.ejs");
@@ -90,6 +94,10 @@ app.get("/intpackage",(req,res)=>
 app.get("/islpackage",(req,res)=>
 {
     res.render("islpackage.ejs");
+});
+app.get("/indpackage",(req,res)=>
+{
+    res.render("indpackage.ejs");
 });
 
 
@@ -242,6 +250,58 @@ app.post("/register", async (req, res) => {
     }
 });
 
+app.get("/profile",async(req,res)=>
+{
+    const username = l_user;
+    try
+    {
+        const user = await db.query("select * from users where username = $1",[username]);
+        const uid = user.rows[0].userid;
+        const count = await db.query("select count(*) from booked where uid = $1",[uid]);
+        const totalc = count.rows[0].count;
+        res.render("profile.ejs",
+            {
+                userid:uid,
+                username:username,
+                email:user.rows[0].email,
+                total:totalc
+            }
+        );
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+});
+
+app.get("/history",async(req,res)=>
+{
+    const username = l_user;
+    try
+    {
+        const user = await db.query("select  * from users where username = $1",[username]);
+        const uid = user.rows[0].userid;
+        const pack = await db.query(`
+        SELECT * 
+        FROM booked b 
+        left JOIN package p ON b.pid = p.pid 
+        left JOIN users u ON u.userid = b.uid 
+        WHERE b.uid = $1`,[uid]);
+
+        const booking = pack.rows;
+
+        res.render("history.ejs",
+            {
+                booking:booking
+            }
+        );
+    }
+    catch (err)
+    {
+        console.log(err);
+        res.status(500).send("An error occurred ");
+    }
+})
 app.get("/book",async(req,res)=>
     {
         const{pid} = req.query;
@@ -250,7 +310,7 @@ app.get("/book",async(req,res)=>
 
         try
         {
-        const user  = await db.query("select * from users where username = $1",[username])
+        const user  = await db.query("select * from users where username = $1",[username]);
         const uid = user.rows[0].userid;
         // console.log(uid);               //debug
         // console.log(username);          //debug

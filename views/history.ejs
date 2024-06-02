@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs") %>
+
+<section>
+    <div class="int-title">
+        <img src="infinity.png" alt="">
+        <div>
+            <h1>BOOKINGS HISTORY</h1>
+        </div>
+    </div>
+</section>
+
+    <div >
+        <div class="final_container boder">
+            <% if(locals.booking && locals.booking.length>=1){%>
+                <% booking.forEach((book)=>{ %>
+                    <div class="box-font">
+                        <ul>
+                            <li><strong>USERNAME : </strong>   <%= book.username %></li>
+                            <li><strong>BOOKING ID : </strong>  <%= book.bid %> </li>
+                            <li><strong>PACKAGE ID : </strong>  <%= book.pid %> </li>
+                            <li><strong>PACKAGE NAME : </strong> <%= book.package_name %>  </li>
+                            <li><strong>PACKAGE DESCRIPTION : </strong> <%= book.package_desc %>  </li>
+                            <li><strong>DESTINATION TYPE : </strong>  <%= book.destination_type %> </li>
+                            <li><strong>DURATION OF JOURNEY : </strong>  <%= book.duration %>days </li>
+                            <li><strong>DATE OF BOOKING  : </strong>   <%= book.date %> </li>
+                            <li><strong>TIME OF BOOKING  : </strong>   <%= book.time %></li>
+                            <li><strong>JOURNEY START DATE : </strong>  <%= book.start_date %> </li>
+                            <li><strong>TOTAL NUMBER OF BOOKING : </strong> <%= book.quantity %>  </li>
+                            <li><strong>TOTAL PRICE : </strong> <%= book.total_price %>  </li>
+                        </ul>
+                    </div>
+                <% }) %>
+            <% }else {  %>
+                <p>YOU HAVE NOT DONE ANY BOOKINGS </p>
+                <p>explore some destination and book </p>
+                <a href="/home" class="button" type="button">Explore</a>
+            <% } %>
+        </div>
+    </div>
+<%- include("partials/footer.ejs") %>
